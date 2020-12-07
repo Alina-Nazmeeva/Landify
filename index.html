@@ -7,7 +7,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -23,7 +30,11 @@
                         <a href="#" class="menu-item">Pricing</a>
                         <a href="#" class="menu-item">Blog</a>
                         <a href="#" class="menu-item">Jobs</a>
-                        <a href="#" class="menu-item">More</a>
+                        <a href="#" class="menu-item">
+                            More
+                            &nbsp;
+                            <img src="./img/arrow.svg" class="dropdown-arrow" alt="Dropdown arrow">
+                        </a>
                     </nav>
                     <div class="download-buttons">
                         <a class="download-item" href="#">
@@ -34,7 +45,7 @@
                     </div>
                 </header>
                 <div class="cta-wrapper">
-                    <div class="cta-heading">
+                    <div class="cta-heading wow fadeInDown">
                         <h1 class="h1">
                             Organise projects.
                             Get more done.
@@ -43,11 +54,11 @@
                             Get Started
                         </button>
                     </div>
-                    <img src="img/screen-1.png" class="promo-screen" alt="Landify User Interface example">
+                    <img src="img/screen-1.png" class="promo-screen wow fadeInRight" alt="Landify User Interface example">
                 </div>
             </div>
         </section>
-        <section class="description-screen">
+        <section class="section description-screen">
             <div class="inner-wrapper">
                 <div class="block image-block">
                     <img src="./img/screen-1.png" class="promo-screen half-hidden" alt="iPhoneX Example UI">
@@ -59,11 +70,445 @@
                     </div>
                     <a href="#" class="button-link">
                         Get Started
-                        <img src="./img/purple-arrow.svg" class="button-link-arrow" alt="">
+                        &nbsp;
+                        <img src="./img/purple-arrow.svg" class="button-link-arrow">
                     </a>
                 </div>
             </div>
         </section>
+        <section class="section">
+            <div class="inner-wrapper">
+                <h2 class="h2">
+                    Our approach to reach your <br />
+                    business goals
+                </h2>
+                <div class="steps-wrapper">
+                    <div class="step">
+                        <div class="step-top">
+                            <div class="step-circle">
+                                <img src="./img/step-1.svg" class="step-icon">
+                            </div>
+                            <img src="./img/line.png" class="step-line">
+                        </div>
+                        <div class="step-content">
+                            <h5 class="h5">
+                                Ideate
+                            </h5>
+                            <div class="content">
+                                Turn your idea from concept to MVP
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-top">
+                            <div class="step-circle">
+                                <img src="./img/step-2.svg" class="step-icon">
+                            </div>
+                            <img src="./img/line.png" class="step-line">
+                        </div>
+                        <div class="step-content">
+                            <h5 class="h5">
+                                Design
+                            </h5>
+                            <div class="content">
+                                Sketch out the product to align the user needs
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-top">
+                            <div class="step-circle">
+                                <img src="./img/step-3.svg" class="step-icon">
+                            </div>
+                            <img src="./img/line.png" class="step-line">
+                        </div>
+                        <div class="step-content">
+                            <h5 class="h5">
+                                Develop
+                            </h5>
+                            <div class="content">
+                                Convert the designs into a live application
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-top">
+                            <div class="step-circle">
+                                <img src="./img/step-4.svg" class="step-icon">
+                            </div>
+                            <img src="./img/line.png" class="step-line">
+                        </div>
+                        <div class="step-content">
+                            <h5 class="h5">
+                                Deploy
+                            </h5>
+                            <div class="content">
+                                Launching the application to the market
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-centered">
+            <h2 class="h2">
+                Craft your new website with <br />
+                Landify UI Kit
+            </h2>
+            <button class="button">
+                Get Started
+            </button>
+        </section>
+        <section class="section">
+            <div class="inner-wrapper">
+                <h2 class="h2">
+                    App Features
+                </h2>
+                <div class="features-wrapper">
+                    <ul class="features-list">
+                        <li class="feature-item">
+                            <div class="step-circle">
+                                <img src="./img/step-1.svg" class="feature-icon" alt="Feature 1">
+                            </div>
+                            <div class="feature-item-content">
+                                <h4 class="h4">
+                                    Headline
+                                </h4>
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum porta magna at blandit a.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="step-circle">
+                                <img src="./img/step-2.svg" class="feature-icon" alt="Feature 2">
+                            </div>
+                            <div class="feature-item-content">
+                                <h4 class="h4">
+                                    Headline
+                                </h4>
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit morbi a, mi egestas eu amet mauris adipiscing.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="step-circle">
+                                <img src="./img/step-3.svg" class="feature-icon" alt="Feature 3">
+                            </div>
+                            <div class="feature-item-content">
+                                <h4 class="h4">
+                                    Headline
+                                </h4>
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida blandit volutpat sagittis sed.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="step-circle">
+                                <img src="./img/step-4.svg" class="feature-icon" alt="Feature 4">
+                            </div>
+                            <div class="feature-item-content">
+                                <h4 class="h4">
+                                    Headline
+                                </h4>
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet eu dolor, neque, sollicitudin proin.
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="promo-screen-wrapper">
+                        <img src="./img/screen-1.png" class="promo-screen" alt="iPhoneX UI Example">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="inner-wrapper">
+                <h2 class="h2">
+                    Experience is the key to <br />
+                    customer lifetime value.
+                </h2>
+                <div class="news-wrapper">
+                    <div class="news">
+                        <img src="./img/news-1.png" class="news-image" alt="News 1">
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </div>
+                    </div>
+                    <div class="news">
+                        <img src="./img/news-2.png" class="news-image" alt="News 2">
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </div>
+                    </div>
+                    <div class="news">
+                        <img src="./img/news-3.png" class="news-image" alt="News 3">
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </div>
+                    </div>
+                    <div class="news">
+                        <img src="./img/news-4.png" class="news-image" alt="News 4">
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-centered download-section">
+            <div class="inner-wrapper">
+                <h2 class="h2">
+                    Fasten your website creation <br />
+                    process with Landify UI Kit
+                </h2>
+                <button class="button">Download Now</button>
+                <div class="advantages-wrapper">
+                    <div class="advantage">
+                        <img src="./img/check-in-icon.svg" class="advantage-icon" alt="Checked">
+                        Fully organized UI components
+                    </div>
+                    <div class="advantage">
+                        <img src="./img/check-in-icon.svg" class="advantage-icon" alt="Checked">
+                        License to use on multiple projects
+                    </div>
+                    <div class="advantage">
+                        <img src="./img/check-in-icon.svg" class="advantage-icon" alt="Checked">
+                        Clean, Minimal & Modern Design
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="brands-wrapper">
+                <img src="./img/Airbnb.png" class="brand-image" alt="Airbnb">
+                <img src="./img/Hubspot.png" class="brand-image" alt="Hubspot">
+                <img src="./img/Google.png" class="brand-image" alt="Google">
+                <img src="./img/Microsoft.png" class="brand-image" alt="Microsoft">
+                <img src="./img/Walmart.png" class="brand-image" alt="Walmart">
+                <img src="./img/FedEx.png" class="brand-image" alt="FedEx">
+            </div>
+        </section>
+        <section class="section section-centered feedback-section">
+            <!-- <div class="inner-wrapper"> -->
+            <h2 class="h2">
+                Our Clients Speak
+            </h2>
+            <p class="header-description">
+                We have been working with clients around the world
+            </p>
+            <div class="slider-wrapper">
+                <!-- <div class="feedbacks-wrapper inner-wrapper"> -->
+                <div class="feedback">
+                    <div class="feedback-inner">
+                        <div class="feedback-title">
+                            Efficient Collaborating
+                        </div>
+                        <div class="feedback-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.
+                        </div>
+                    </div>
+                    <div class="feedback-author">
+                        <img src="./img/author-photo.png" class="feedback-author-photo" alt="Jane Cooper">
+                        <p class="feedback-author-name">Jane Cooper</p>
+                        <p class="feedback-author-position">CEO at ABC Corporation</p>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <div class="feedback-inner">
+                        <div class="feedback-title">
+                            Intuitive Design
+                        </div>
+                        <div class="feedback-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.
+                        </div>
+                    </div>
+                    <div class="feedback-author">
+                        <img src="./img/author-photo.png" class="feedback-author-photo" alt="Jane Cooper">
+                        <p class="feedback-author-name">Jane Cooper</p>
+                        <p class="feedback-author-position">CEO at ABC Corporation</p>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <div class="feedback-inner">
+                        <div class="feedback-title">
+                            Mindblowing Service
+                        </div>
+                        <div class="feedback-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.
+                        </div>
+                    </div>
+                    <div class="feedback-author">
+                        <img src="./img/author-photo.png" class="feedback-author-photo" alt="Jane Cooper">
+                        <p class="feedback-author-name">Jane Cooper</p>
+                        <p class="feedback-author-position">CEO at ABC Corporation</p>
+                    </div>
+                </div>
+                <!-- </div> -->
+                <!-- <div class="feedbacks-wrapper inner-wrapper"> -->
+                <div class="feedback">
+                    <div class="feedback-inner">
+                        <div class="feedback-title">
+                            Efficient Collaborating
+                        </div>
+                        <div class="feedback-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.
+                        </div>
+                    </div>
+                    <div class="feedback-author">
+                        <img src="./img/author-photo.png" class="feedback-author-photo" alt="Jane Cooper">
+                        <p class="feedback-author-name">Jane Cooper</p>
+                        <p class="feedback-author-position">CEO at ABC Corporation</p>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <div class="feedback-inner">
+                        <div class="feedback-title">
+                            Intuitive Design
+                        </div>
+                        <div class="feedback-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.
+                        </div>
+                    </div>
+                    <div class="feedback-author">
+                        <img src="./img/author-photo.png" class="feedback-author-photo" alt="Jane Cooper">
+                        <p class="feedback-author-name">Jane Cooper</p>
+                        <p class="feedback-author-position">CEO at ABC Corporation</p>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <div class="feedback-inner">
+                        <div class="feedback-title">
+                            Mindblowing Service
+                        </div>
+                        <div class="feedback-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.
+                        </div>
+                    </div>
+                    <div class="feedback-author">
+                        <img src="./img/author-photo.png" class="feedback-author-photo" alt="Jane Cooper">
+                        <p class="feedback-author-name">Jane Cooper</p>
+                        <p class="feedback-author-position">CEO at ABC Corporation</p>
+                    </div>
+                </div>
+                <!-- </div> -->
+                <!-- <div class="feedbacks-wrapper inner-wrapper"> -->
+                <div class="feedback">
+                    <div class="feedback-inner">
+                        <div class="feedback-title">
+                            Efficient Collaborating
+                        </div>
+                        <div class="feedback-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.
+                        </div>
+                    </div>
+                    <div class="feedback-author">
+                        <img src="./img/author-photo.png" class="feedback-author-photo" alt="Jane Cooper">
+                        <p class="feedback-author-name">Jane Cooper</p>
+                        <p class="feedback-author-position">CEO at ABC Corporation</p>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <div class="feedback-inner">
+                        <div class="feedback-title">
+                            Intuitive Design
+                        </div>
+                        <div class="feedback-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.
+                        </div>
+                    </div>
+                    <div class="feedback-author">
+                        <img src="./img/author-photo.png" class="feedback-author-photo" alt="Jane Cooper">
+                        <p class="feedback-author-name">Jane Cooper</p>
+                        <p class="feedback-author-position">CEO at ABC Corporation</p>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <div class="feedback-inner">
+                        <div class="feedback-title">
+                            Mindblowing Service
+                        </div>
+                        <div class="feedback-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.
+                        </div>
+                    </div>
+                    <div class="feedback-author">
+                        <img src="./img/author-photo.png" class="feedback-author-photo" alt="Jane Cooper">
+                        <p class="feedback-author-name">Jane Cooper</p>
+                        <p class="feedback-author-position">CEO at ABC Corporation</p>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <!-- </div> -->
+        </section>
+        <section class="section cta-section">
+            <div class="inner-wrapper">
+                <div class="offer-wrapper">
+                    <h2 class="h2">
+                        Manage your projects from your mobile
+                    </h2>
+                    <p class="content">
+                        Download the app to manage your projects, keep track of the progress and complete tasks without procastinating. Stay on track and complete on time!
+                    </p>
+                    <div class="download-block">
+                        <p class="download-title">
+                            Get the App
+                        </p>
+                        <div class="download-buttons">
+                            <a class="download-item" href="#">
+                                <img src="./img/android.png" class="download-image" alt="Download Landify Android">                  
+                            <a class="download-item" href="#">
+                                <img src="./img/ios.png" class="download-image" alt="Download Landify iOS">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="screens-wrapper">
+                    <img src="./img/screen-2.png" class="promo-screen" alt="iPhone UI Example">
+                    <img src="./img/screen-1.png" class="promo-screen" alt="iPhone UI Example">
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="inner-wrapper">
+                <div class="footer-wrapper">
+                    <div class="footer-menu">
+                        <img src="./img/footer-logo.png" class="footer-logo" alt="Landify">
+                        <p class="footer-links">
+                            <a href="#" class="footer-link">Download Now</a>
+                            <a href="#" class="footer-link">License</a>
+                        </p>
+                        <p class="footer-links">
+                            <a href="#" class="footer-link">About</a>
+                            <a href="#" class="footer-link">Features</a>
+                            <a href="#" class="footer-link">Pricing</a>
+                            <a href="#" class="footer-link">Careers</a>
+                            <a href="#" class="footer-link">Help</a>
+                            <a href="#" class="footer-link">Privacy Policy</a>
+                        </p>
+                        <p class="copyrights">
+                            © 2020 Landify UI Kit. All rights reserved
+                        </p>
+                    </div>
+                    <div class="footer-download">
+                        <p class="download-title">
+                            Get the App
+                        </p>
+                        <div class="download-buttons">
+                            <a class="download-item" href="#">
+                                <img src="./img/android.png" class="download-image" alt="Download Landify Android">                  
+                            <a class="download-item" href="#">
+                                <img src="./img/ios.png" class="download-image" alt="Download Landify iOS">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
