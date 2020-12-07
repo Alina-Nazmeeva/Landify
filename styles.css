@@ -529,6 +529,9 @@ img.feedback-author-photo{
     border-radius: 7px;
     background-color: #fff;
 }
+.slick-next {
+    right: 0;
+}
 
 
 
